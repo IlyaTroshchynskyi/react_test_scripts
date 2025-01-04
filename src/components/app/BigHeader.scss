@@ -1,0 +1,42 @@
+@import '../../App.scss';
+
+.block-header {
+  display: grid;
+  gap: 24px;
+
+  &--center {
+    text-align: center;
+  }
+  &--inline {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: end;
+  }
+
+  &__title {
+    color: $darkColor;
+    font-size: $fontSizeMain;
+    font-weight: 700;
+    line-height: 24;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &--big {
+      font-size: 2.5rem;
+    }
+
+    &--white {
+      //color: #ffffff;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: #333;
+  background-color: #535bf2;
+    p {
+      margin: 0;
+    }
+  }
+}

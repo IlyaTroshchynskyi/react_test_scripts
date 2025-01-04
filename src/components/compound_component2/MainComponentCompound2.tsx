@@ -3,7 +3,7 @@ import {useCallback, useEffect, useState} from 'react'
 import {getUsers} from './utils.ts'
 import {TUser} from './types.ts'
 import Popover from './Popover.tsx'
-import '../../App.css'
+import '../../App.scss'
 function MainComponentCompound2() {
 	const [data, setData] = useState<TUser[]>([])
 
